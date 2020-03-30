@@ -1,0 +1,81 @@
+﻿/* 
+    Created on  : 21-nov-2019, 13:02:10
+    Author      : Álvaro González Santos
+    File        : estilo.css
+    Description : Estilos html
+*/
+body{
+	background-color: orange;
+	background-image: url("../images/calabaza.png");
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-size: 125px;
+	margin-top: 125px;
+}
+
+.caja1,.caja2,.caja3{
+	width: 180px;
+	height: 180px;
+	margin: 5px;
+	border-width: 10px;
+	display: inline-block;
+}
+
+.caja1{
+	background-color: yellowgreen;
+	background-image: url("../images/kiwi.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 125px;
+	border-style: dotted;
+	border-color: green;
+}
+
+.caja2{
+	background-color: green;
+	background-image: url("../images/apple.png");
+	background-position: 50% 50%;
+	background-repeat: repeat;
+	background-size: 33%;
+	border-style: double;
+	border-color: yellowgreen;
+}
+
+.caja3{
+	background-image: url("../images/melon.png");
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	background-size: 33%;
+	border-style: outset;
+	border-color: green;
+}
+
+.caja1:hover{
+	background-color: yellowgreen;
+	background-image: url("../images/kiwi.png");
+	background-position: 50% 50%;
+	background-repeat: repeat;
+	background-size: 33%;
+	border-style: dotted;
+	border-color: green;
+}
+
+.caja2:hover{
+	background-color: yellow;
+	background-image: url("../images/apple.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-style: double;
+	border-color: yellowgreen;
+}
+
+.caja3:hover{
+	background-image: url("../images/melon.png"), url("../images/kiwi.png"), url("../images/apple.png");
+	background-position: 0% 0%, 100% 0%, 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 33%;
+	border-style: outset;
+	border-color: green;
+}

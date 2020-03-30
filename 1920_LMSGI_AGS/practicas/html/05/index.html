@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+			<title> HTML 05 Álvaro González </title>
+			
+	</head>
+	<body>
+		<header>
+			<h1> FORMULARIO </h1>
+		</header>
+			<form action="#" method="get">
+				<fieldset>
+					<legend>Datos personales</legend>
+					<!--Elemento de tipo text para que el usuario introduzca su nombre y apellidos -->
+					<div>
+						<label for="LblNombre">Nombre:</label>
+						<input type="text" name="nombre" id="LblNombre" placeholder="Introduzca su nombre" required>
+					</div>
+					<br>
+					<div>
+						<label for="LblApellidos">Apellidos:</label>
+						<input type="text" name="apellidos" id="LblApellidos" placeholder="Introduzca sus apellidos" required>
+					</div>
+					<br>
+					<!--Elemento de tipo radio para especificar el sexo del usuario -->
+					<div>Sexo: 
+						<label for="LblHombre">
+						<input type="radio" name="sexo" id="LblHombre" value="H" required>Hombre
+						</label>
+						<label for="LblMujer">
+						<input type="radio" name="sexo" id="LblMujer" value="M" required>Mujer
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo date para introducir la fecha de nacimiento del usuario -->
+					<div>
+						<label for="LblFecha">Fecha de nacimiento:</label>
+						<input type="date" name="fecha" id="LblFecha" required>
+					</div>
+					<br>
+					<!--Elemento de tipo tel para que el usuario introduzca su numero de telefono -->
+					<div>
+						<label for="LblTel">Telefono de contacto:</label>
+						<input type="tel" name="tel" id="LblTel" pattern="[0-9]{9}" placeholder="000000000" required>
+					</div>
+					<br>
+					<!--Elemento de tipo email para que el usuario introduzca su correo electronico -->
+					<div>
+						<label for="LblMail">Email:</label>
+						<input type="email" name="email" id="LblMail" placeholder="example@example.com" required>
+					</div>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Información previa</legend>
+					<!--Elemento de tipo time para que el usuario indique las horas diarias que usa el ordenador -->
+					<div>
+						<label for="LblTiempo">¿Cuantas horas usas el ordenador al día?</label>
+						<input type="time" name="tiempo" id="LblTiempo" required>
+					</div>
+					<br>
+					<!--Lista desplegable para especificar la funcion del ordenador -->
+					<div>
+						<label for="LblPC">Función del ordenador</label>
+						<select id="LblPC">
+							<option value="Basico">Basico</option>
+							<option value="Workstation">Workstation</option>
+							<option value="Gaming">Gaming</option>
+						</select>
+					</div>
+					<br>
+					<!--Elemento de tipo number para indicar el presupuesto -->
+					<div>
+						<label for="LblPresu">Presupuesto(€)</label>
+						<input type="number" name="presupuesto" id="LblPresu" min="400" placeholder="800" required>
+					</div>
+					<br>
+					<!--Elemento de tipo url para que el usuario indique si tiene pagina web -->
+					<div>
+						<label for="LblURL">¿Tienes alguna pagina web?</label>
+						<input type="url" name="url" id="LblURL" placeholder="www.example.com">
+					</div>
+					<br>
+					<!--Elemento de tipo file para que el usuario suba algun archivo que crea necesairio -->
+					<div>
+						<label for="LblFile">Archivo(Opcional):</label>
+						<input type="file" name="file" id="LblFile">
+					</div>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Configuración del ordenador</legend>
+					<!--Elemento de tipo radio para elegir la configuracion del procesador -->
+					<div>Procesador:<br>
+						<label for="LblIntel">
+						<input type="radio" name="proc" id="LblIntel" value="I" required>Intel
+						</label><br>
+						<label for="LblAMD">
+						<input type="radio" name="proc" id="LblAMD" value="A" required>AMD
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo radio para elegir si quiere refrigeracion liquida -->
+					<div>¿Desea añadir refrigeración liquida?<br>
+						<label for="LblSi">
+						<input type="radio" name="ref" id="LblSi" value="S" required>Si
+						</label><br>
+						<label for="LblNo">
+						<input type="radio" name="ref" id="LblNo" value="N" required>No
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo range para indicar la capacidad de la memoria RAM -->
+					<div>
+						<label for="LblMemoria">Memoria RAM:	</label><br>4
+						<input type="range" name="ram" id="LblMemoria" list="LblRAM" min="4" max="64" value="16" step="4">64
+					</div>
+						<datalist id="LblRAM">
+							<option value="4" label="4">
+							<option value="8" label="8">
+							<option value="16" label="16">
+							<option value="32" label="32">
+							<option value="64" label="64">
+						</datalist>
+					<br>
+					<!--Elemento de tipo checkbox para elegir los componentes de almacenamiento -->
+					<div>Discos Duros:<br>
+						<label for="LblHDD">
+						<input type="checkbox" name="dd" id="LblHDD">HDD
+						</label><br>
+						<label for="LblSSD">
+						<input type="checkbox" name="dd" id="LblSSD">SSD
+						</label><br>
+						<label for="LblSSHD">
+						<input type="checkbox" name="dd" id="LblSSHD">SSHD
+						</label><br>
+						<label for="LblM2">
+						<input type="checkbox" name="dd" id="LblM2">M.2
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo radio para elegir si quiere una tarjeta grafica -->
+					<div>¿Desea añadir una tarjeta grafica?<br>
+						<label for="LblSi2">
+						<input type="radio" name="tg" id="LblSi2" value="S" required>Si
+						</label><br>
+						<label for="LblNo2">
+						<input type="radio" name="tg" id="LblNo2" value="N" required>No
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo checkbox para elegir los perifericos -->
+					<div>Perifericos:<br>
+						<label for="LblRaton">
+						<input type="checkbox" name="dd" id="LblRaton">Raton
+						</label><br>
+						<label for="LblTeclado">
+						<input type="checkbox" name="dd" id="LblTeclado">Teclado
+						</label><br>
+						<label for="LblMonitor">
+						<input type="checkbox" name="dd" id="LblMonitor">Monitor 1
+						</label><br>
+						<label for="LblMonitor2">
+						<input type="checkbox" name="dd" id="LblMonitor2">Monitor 2
+						</label><br>
+						<label for="LblAur">
+						<input type="checkbox" name="dd" id="LblAur">Auriculares
+						</label><br>
+						<label for="LblMic">
+						<input type="checkbox" name="dd" id="LblMic">Microfono
+						</label><br>
+						<label for="LblCam">
+						<input type="checkbox" name="dd" id="LblCam">WebCam
+						</label><br>
+						<label for="LblGame">
+						<input type="checkbox" name="dd" id="LblGame">Gamepad
+						</label><br>
+						<label for="LblAlt">
+						<input type="checkbox" name="dd" id="LblAlt">Altavoces
+						</label><br>
+						<label for="LblImp">
+						<input type="checkbox" name="dd" id="LblImp">Impresora
+						</label>
+					</div>
+					<br>
+					<!--Elemento de tipo color para elegir el color del ordenador -->
+					<div>
+						<label for="LblColor">Color del ordenador</label>
+						<input type="color" name="color" id="LblColor">
+					</div>
+					<br>
+					<!--Elemento de tipo textarea para que el usuario indique, si es necesario, otros componentes a mayores -->
+					<div>
+						<label for="LblExtras">¿Desea añadir mas componentes? Si es asi, indiquenos cual:</label><br>
+						<textarea id="LblExtras" name="extras" cols="50" rows="5" placeholder="Introduzca componentes extra que quiera añadir a su ordenador"></textarea>
+					</div>
+					<br>
+					<!--Elemento de tipo radio para elegir el sistema operativo -->
+					<div>Sistema Operativo:<br>
+						<label for="LblW10p">
+						<input type="radio" name="so" id="LblW10p" value="W10p" required>Windows 10 Pro
+						</label><br>
+						<label for="LblW10h">
+						<input type="radio" name="so" id="LblW10h" value="W10h" required>Windows 10 Home
+						</label><br>
+						<label for="LblW8">
+						<input type="radio" name="so" id="LblW8" value="W8" required>Windows 8
+						</label><br>
+						<label for="LblWs">
+						<input type="radio" name="so" id="LblWs" value="Ws" required>Windows Server 2019
+						</label>
+					</div>
+				</fieldset>
+				<br>
+				<div>
+					<input type="image" src="images/enviar.png" alt="Submit" width="35" height="35"  style="vertical-align:middle" title="Enviar">
+					<button type="reset"><img src="images/borrar.png" alt="image" width="35" height="35" style="vertical-align:middle" title="Borrar"></button>
+				</div>
+			</form>
+	</body>
+</html>		

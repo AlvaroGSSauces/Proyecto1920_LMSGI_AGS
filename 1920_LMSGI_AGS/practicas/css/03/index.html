@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+Autor.- Álvaro González
+fecha .- 21/11/2019
+Ejercicio.- 10
+-->
+<html>
+    <head>
+        <title>CSS 10 Álvaro González</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           body{
+                font-size: 1.1em;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color: #555;
+                background-color: #F5F5F5;
+           }
+           *.container{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+           }
+           .el{
+                padding: 40px;
+                margin-bottom: 30px;
+                background-color: #0099CC;
+                color: white;
+                background-image: url("images/workstation.jpg");
+                height: 300px;
+                background-repeat: no-repeat;
+                border-style: solid;
+                border-color: rgba(233,19,140,0.5);
+                border-width: 30px;
+           }
+           .origin-border-box{
+                padding: 40px;
+                margin-bottom: 30px;
+                background-color: #0099CC;
+                color: white;
+                background-image: url("images/workstation.jpg");
+                height: 300px;
+                background-repeat: no-repeat;
+                border-style: solid;
+                border-color: rgba(233,19,140,0.5);
+                border-width: 30px;
+                background-origin: border-box;
+                background-position: top left;
+           }
+            .origin-content-box{
+                padding: 40px;
+                margin-bottom: 30px;
+                background-color: #0099CC;
+                color: white;
+                background-image: url("images/workstation.jpg");
+                height: 300px;
+                background-repeat: no-repeat;
+                border-style: solid;
+                border-color: rgba(233,19,140,0.5);
+                border-width: 30px;
+                 background-origin: content-box;
+                background-position: top left;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="el">
+                <p>
+                    My background origin has the default <code>padding-box</code> value. The background's position origin is at the padding box's top left corner.
+                </p>
+            </div>
+            <div class="origin-border-box">
+                <p>
+                    My background origin has the value <code>border-box</code>. The background's position origin is at the border box's top left corner.
+                </p>
+            </div>
+            <div class="origin-content-box">
+                <p>
+                    My background origin has the value <code>content-box</code>. The background's position origin is at the content box's top left corner.
+                </p>
+            </div>
+           
+        </div>
+    </body>
+</html>

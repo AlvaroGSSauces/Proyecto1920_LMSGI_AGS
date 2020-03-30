@@ -1,0 +1,128 @@
+﻿
+/* 
+    Created on : 03-dic-2019, 10:40:00
+    Author     : Alvaro Gonzalez
+   
+*/
+body{
+	font-family: calibri, arial, sans-serif;
+	background-image: url(../images/Le_petit_prince.png);
+	background-attachment: fixed;
+	background-size: 25%;
+	background-repeat: no-repeat;
+	background-position: top right;
+	margin-right: 25%;
+}
+
+h1{
+	background-color: #ffa500;
+	color: #ff4500;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.par1{
+	background-color: LightBlue;
+	color: green;
+}
+
+.static{
+	border: 3px solid #E9967A;
+	padding: 3px;
+}
+
+.relative{
+	border: 3px dotted #9932CC;
+	padding: 3px;
+	position: relative;
+	left: 30px;
+}
+
+.fixed{
+	position: fixed;
+	background-color: #FFB973;
+	border: 3px  dashed #04B404;
+	padding: 3px;
+	bottom: 30px;
+	right: 0px;
+	width: 25%;
+}
+
+.relative1{
+	border: 3px groove LightGreen;
+	padding: 3px;
+	position: relative;
+	height: 150px;
+	width: 500px;
+}
+
+.absolute{
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+	border: 3px solid lightgreen;
+	padding: 3px;
+	width: 50%;
+}
+
+.sticky{
+	position: sticky;
+	right: 0px;
+	top: 0px;
+	background-color: #008000;
+	color: lightgreen;
+	text-align: center;
+	border-radius: 20px;
+	border: 3px solid lightgreen;
+	padding: 3px;
+}
+
+.img1{
+	position: absolute;
+	width: 20%;
+	z-index: -1;
+}
+
+.container{
+	position: relative;
+}
+
+.img2{
+	width: 100%;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.container div{
+	border: 2px solid #8b008d;
+	background-color: #ff9c00;
+	color: #8b008d;
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.topleft{
+	left: 8px;
+	top: 8px;
+}
+
+.topright{
+	right: 8px;
+	top: 8px;
+}
+
+.center{
+	left: 50%;
+	top: 50%;
+}
+
+.bottomleft{
+	bottom: 8px;
+	left: 8px;
+}
+
+.bottomright{
+	bottom: 8px;
+	right: 8px;
+}

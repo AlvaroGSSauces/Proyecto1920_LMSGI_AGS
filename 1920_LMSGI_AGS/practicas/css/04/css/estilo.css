@@ -1,0 +1,140 @@
+
+/* 
+    Created on : 25-nov-2019, 22:17:12
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+*/
+
+body{
+	background-image: url("../images/Le_petit_prince.png");
+	background-attachment: fixed;
+	background-size: 33%;
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-right: 33%;
+}
+
+.outset{
+	font-family: sans-serif;
+	font-variant: small-caps;
+	color: red;
+	text-align: center;
+	text-transform: capitalize;
+	border-style: outset;
+	border-color: red;
+	border-width: 4px;
+	outline-style: solid;
+	outline-color: pink;
+	outline-width: 4px;
+	outline-offset: 4px;
+	background-color: #ADD8E6;
+	text-shadow: 2px 1px #DAA520;
+	letter-spacing: 0px;
+	margin: auto;
+	width: 350px;
+	height: 35px;
+}
+
+#par1{
+	color: green;
+	text-decoration: underline;
+	text-align: center;
+	font-weight: bold;
+}
+
+.txt{
+	border-bottom-style: dotted;
+	border-top-style: dotted;
+	border-bottom-color: red;
+	border-top-color: red;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: green;
+	border-right-color: green;
+	border-radius: 20px;
+	border-width: 4px;
+	padding: 10px;
+	text-align: justify;
+	text-indent: 30px;
+	font-family: sans-serif;
+}
+
+#par2{
+	color: purple;
+	text-decoration: overline;
+	text-align: center;
+	word-spacing: 8px;
+	font-style: italic;
+}
+
+.uno{
+	vertical-align: middle;
+	width: 33%;
+	height: 33%;
+}
+
+.enl1:link{
+	background-color: LightSalmon;
+	color: red;
+	text-decoration: none;
+}
+
+.enl1:visited{
+	background-color: yellowgreen;
+	color: green;
+	text-decoration: none;
+}
+
+.enl1:hover{
+	background-color: khaki;
+	color: hotpink;
+	text-decoration: underline;
+}
+
+.enl1:active{
+	background-color: aquamarine;
+	color: blue;
+	text-decoration: underline;
+}
+
+.enl2:link{
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+	color: DarkSlateBlue;
+	text-align: center;
+	padding: 10px;
+	border-color: DarkSlateBlue;
+}
+
+.enl2:visited{
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+	color: DarkSlateBlue;
+	text-align: center;
+	padding: 10px;
+	border-color: DarkSlateBlue;
+}
+
+.enl2:hover{
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+	color: White;
+	text-align: center;
+	padding: 10px;
+	border-color: White;
+	background-color: DarkSlateBlue;
+}
+
+.enl2:active{
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+	color: White;
+	text-align: center;
+	padding: 10px;
+	border-color: White;
+	background-color: DarkSlateBlue;
+}
+

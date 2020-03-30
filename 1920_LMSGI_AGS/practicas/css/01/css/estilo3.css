@@ -1,0 +1,19 @@
+/* 
+    Created on :
+    Author     : 
+    File        : estilo3.css
+    Description : Trabajando con selectores
+*/
+
+.padre {
+	background-color: #009cde;
+}
+
+/* .padre>div {border: 1px solid red;} */
+
+.hijo {
+	border: 1px solid red;
+}
+
+
+
